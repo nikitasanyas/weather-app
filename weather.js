@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+ document.addEventListener("DOMContentLoaded", function() {
     const searchBtn = document.querySelector('.search-btn');
     const searchInput = document.querySelector('.search-input');
     const cityElement = document.querySelector('.city');
@@ -25,8 +25,12 @@ document.addEventListener("DOMContentLoaded", function() {
         options: {
             plugins: {
                 legend: {
-                    onHover: handleHover,
-                    onLeave: handleLeave
+                    onHover: (event) => {
+                        document.body.style.cursor = 'pointer';
+                    },
+                    onLeave: (event) => {
+                        document.body.style.cursor = 'default';
+                    }
                 }
             }
         }
@@ -50,6 +54,13 @@ document.addEventListener("DOMContentLoaded", function() {
         const city = searchInput.value;
         if (city) {
             fetchWeather(city);
+        }
+    });
+
+    searchInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            searchBtn.click();
         }
     });
 
