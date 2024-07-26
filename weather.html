@@ -1,0 +1,192 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER-APP</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   
+   
+    <link rel="stylesheet" href="weatherstyle.css">
+    
+
+
+</head>
+<body>
+
+
+
+  <!--  heading-->
+  
+    <div class="heading">
+        <h1 class="heading">WEATHER-APP</h1>
+    </div>
+
+
+
+  <!--  MAIN START HERE-->
+    <div class="main">
+
+
+
+<!-- CODE FOR THE SEARCH CARD OR INPUT BOX-->
+
+        <div class="card"> 
+            <div class="search">
+
+
+            <input type="text" class="search-input" placeholder="ENTER CITY" 
+            spellcheck="false">
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+             </div>
+              
+               </div>
+<!--  CARD CLOSE HERE-->
+
+            <h1 class="city">CITY</h1>
+            <p id="date"></p>
+            <p id="demo" style="text-align: center; font-size: 17px;"></p>
+
+
+
+    <!--  CONTAINER SHOWING SOME CARS WITH INFO-->
+
+
+              <div class="container"> 
+
+            
+   <!--  SAMECARD 1-->
+              <div class="cardsame" id="car1">
+
+
+    <!-- DETAIL-->
+
+                <div class="weather">
+                    <div class="details-t"> 
+                        <img src="sun.jpeg" >
+                     
+                    <h2 >Temperature</h2>
+                    <h1 class="temp">--</h1>
+                </div>
+            </div>  
+            </div>  <!-- CARDSAME CLOSE HERE-->
+
+
+
+    <!--  SAMECARD CARD 2-->
+            <div class="cardsame" id="car2">
+              
+                    <div class="weather">
+                        <div class="details-w">
+                            <img src="morningsun.jpeg" >
+                         
+                        <h2 >Wind Speed</h2>
+                        <h1 class="temp">--</h1>
+                        
+                         </div>
+                        </div>
+                    </div>
+
+
+
+    <!--  SAMECARD CARD 3-->   
+      
+    
+                <div class="cardsame" id="car3">
+              
+                     <div class="weather">
+                        <div class="details-h">
+                            <img src="road.jpeg" >
+                         
+                        <h2>humidity</h2>
+                        <h1 class="humidity">--</h1>
+                        
+                        </div>
+                        </div>
+                   </div>
+
+
+
+     <!--  SAMECARD CARD 4-->
+       
+                  <div class="cardsame" id="car4">
+              
+                    <div class="weather">
+                       <div class="details-sunrise">
+                        <img src="r.jpeg">
+                        
+                       <h2>Rain</h2>
+                       <h1 class="rain">--</h1>
+                       
+                       </div>
+                       </div>
+                  </div>
+   
+    
+             
+     <!--  SAMECARD CARD 5-->
+
+                  <div class="cardsame" id="car4">
+              
+                    <div class="weather">
+                       <div class="details-sunrise">
+                        <img src="newcloud.jpg" >
+                        
+                       <h2>Sunrise</h2>
+                       <h1 class="sunrise">--</h1>
+                       
+                       </div>
+                       </div>
+                  </div>
+              
+      
+
+          <!--  SAMECARD CARD 6-->
+                   <div class="cardsame" id="car5">
+              
+                    <div class="weather">
+                       <div class="details-sunset">
+                         <img src="new.webp" >
+                        
+                       <h2 >Sunset</h2>
+                       <h1 class="sunset">--</h1>
+                       
+                       </div>
+                       </div>
+
+
+
+
+                       
+                  </div>
+    
+  
+                </div>
+                  </div>
+                    </div>
+                </div>
+            </div>
+         
+        
+        </div>
+             </div>
+
+
+     <!-- NOW CODE FOR CHART -->
+   
+     <div>
+        <div class="chartbg"> 
+           <video src="video.mp4" autoplay muted loop> </video>
+        <canvas id="myChart" class="chart"></canvas>
+    </div>
+ 
+
+    <!-- Script Tags -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    
+     <script src="weather.js"></script>
+              </body>
+              </html>
